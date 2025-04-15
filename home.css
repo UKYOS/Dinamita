@@ -1,4 +1,7 @@
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 /* Lista superior de opciones */
 /* Encabezado general */
 .encabezado {
@@ -16,7 +19,7 @@
     z-index: 999;
   }
   
-  /* Contenedor centrado al 80% */
+  
   .contenedor-encabezado {
     width: 80%;
     margin: 0 auto;
@@ -33,7 +36,7 @@
     margin-right: 5%;
   }
   
-  /* Menú */
+ 
   .nav-menu ul {
     list-style: none;
     display: flex;
@@ -103,7 +106,7 @@
     color: #555;
   }
   
-  /* Tamaño específico para la imagen */
+ 
   .imagen-equipo {
     width: 800px;
     height: auto;
@@ -111,7 +114,7 @@
     object-fit: cover;
   }
   
-  /* Animación */
+  
   .animada {
     opacity: 0;
     transform: translateY(30px);
@@ -138,8 +141,91 @@
     }
   }
   
-  
 
+/* Seccion de nosotros*/
+.nosotros {
+    padding: 60px 10%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .nosotros h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .info-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .carta {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+  
+  .carta h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+  }
+  
+  .carta ul {
+    list-style: none;
+    padding: 0;
+  }
+ 
+/* Seccion de Servicios */
+.servicios {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .servicios h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+  
+  .servicio {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .servicio:hover {
+    transform: translateY(-5px);
+  }
+  
+  .servicio img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .servicio p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  
 /* Seccion de descripcion de integrantes*/
 .seccion-profesionales {
     width: 80%;
