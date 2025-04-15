@@ -1,144 +1,43 @@
 
 /* Lista superior de opciones */
-/* Encabezado general */
-.encabezado {
+.contenedorMenu{
     width: 80%;
-    margin: 0 auto; /* Esto lo centra */
-    margin-top: 10;
+    margin: 0 auto; 
+    background-color: #f5f5f5;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  /* Contenedor centrado al 80% */
-  .contenedor-encabezado {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Logo */
-  .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #3498db;
-    margin-right: 5%;
-  }
-  
-  /* Menú */
-  .nav-menu ul {
+}
+.Mainmenu{
     list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu a:hover {
-    color: #3498db;
-  }
-  
-  /* Responsive básico (opcional para móvil) */
-  @media (max-width: 768px) {
-    .contenedor-encabezado {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px 10px;
-    }
-  
-    .nav-menu ul {
-      flex-direction: column;
-      width: 100%;
-      gap: 10px;
-      margin-top: 10px;
-    }
-  
-    .logo {
-      margin-right: 0;
-    }
-  }
-  
-
-/* Seccion de inicio*/
-
-.inicio-equipo {
+    display: flex;      
     width: 80%;
-    margin: 60px auto;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.Mainmenu li{
+    padding: 10px;
+    margin: 10px; 
+}
+
+.Mainmenu li a {
+   text-decoration: none;
+}
+
+/* Seccion de descripcion*/
+
+.ContenedorDescripcion{
+    width: 80%;
+    margin: 0 auto; 
+    background-color: #f5f5f5;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-  }
-  
-  .contenido-inicio {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .inicio-equipo h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .inicio-equipo p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  /* Tamaño específico para la imagen */
-  .imagen-equipo {
-    width: 800px;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
-  /* Animación */
-  .animada {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1.2s ease-out forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .inicio-equipo {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .imagen-equipo {
-      width: 90%;
-      max-width: 400px;
-    }
-  }
-  
-  
+}
 
 /* Seccion de descripcion de integrantes*/
 .seccion-profesionales {
@@ -188,57 +87,3 @@
     font-size: 14px;
     color: #555;
   }
-
-  /* Seccion de contactanos*/
-  .contactanos {
-    width: 80%;
-    margin: 0 auto;
-    padding: 60px 20px;
-    background-color: #f2f2f2;
-    border-radius: 12px;
-    text-align: center;
-  }
-  
-  .contactanos h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .contactanos p {
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  
-  .formulario-contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .formulario-contacto input,
-  .formulario-contacto textarea {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    resize: none;
-  }
-  
-  .formulario-contacto button {
-    padding: 12px;
-    font-size: 16px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .formulario-contacto button:hover {
-    background-color: #2980b9;
-  }
-  
